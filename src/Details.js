@@ -146,6 +146,25 @@ let Details = [
       "VSC for code development.",
     ],
   },
+  {
+    id: 9,
+    Title:
+      "Amazon Product Sentiment Analyzer",
+    Description:
+      "The aim of this research-based project is to develop an integrated system for precise and context-aware yield forecasts in Faisalabad, using multi-source data that includes remote sensing, meteorological, and soil data, supporting sustainable agricultural practices and food security.",
+    Keywords: "Remote Sensing, Meteorological Data, Soil Data",
+    Image: "Crop Yeild.mp4",
+    Challenges: [
+      "Traditional methods for yield prediction rely on ground-truthing techniques.",
+      "These techniques can be expensive and time-consuming.",
+    ],
+    Tools: [
+      "MERN Stack for developing the web application.",
+      "Python for model development",
+      "Jupyter Notebook for data analysis and visualization.",
+      "VSC for code development.",
+    ],
+  },
 ];
 
 export default Details;
