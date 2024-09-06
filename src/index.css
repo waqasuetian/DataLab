@@ -31,8 +31,7 @@
   --box--border__bottom-left: url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='1' y='-9' width='18' height='18' rx='4' ry='4' stroke='%23000' stroke-width='2' /></svg>");
   --box--border__bottom: url("data:image/svg+xml,<svg preserveAspectRatio='none' width='100' height='10' viewBox='0 0 100 10' fill='none' xmlns='http://www.w3.org/2000/svg'><line x1='-1' y1='9' x2='101' y2='9' stroke='%23000' stroke-width='2'/></svg>");
   --box--border__bottom-right: url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='-9' y='-9' width='18' height='18' rx='4' ry='4' stroke='black' stroke-width='2' /></svg>");
-  --box--border__bottom-right: url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='-9' y='-9' width='18' height='18' rx='4' ry='4' stroke='black' stroke-width='2' /></svg>");
-
+  
   position: relative;
   position: relative;
   font-weight: 700;
@@ -56,7 +55,6 @@
     var(--box--border__bottom-left) 0 100% / .625rem .625rem,
     var(--box--border__bottom) .625rem 100% / calc(100% - 1.25rem) .625rem,
     var(--box--border__bottom-right) 100% 100% / .625rem .625rem;
-    var(--box--border__bottom-right) .625rem 100% / calc(100% - 1.25rem) .625rem,
   mask-repeat: no-repeat;
 }
 
