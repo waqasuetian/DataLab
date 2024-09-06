@@ -10,8 +10,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #9be2bf 0%, #a8e6cf 100%); /* Soft sea green gradient */
-  color: #034d43; /* Darker shade for text */
+  background: linear-gradient(135deg, #1F3B4D 0%, #4C5270 100%); /* Deep blue to indigo gradient */
+  color: #ECEFF1; /* Light off-white for text */
   line-height: 1.75;
   padding: 20px;
   display: flex;
@@ -26,7 +26,7 @@ body {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #04756f; /* Sea green color for the heading */
+  color: #00F5D4; /* Neon blue for headings */
   font-size: 3rem;
   padding: 15px;
   text-align: center;
@@ -48,19 +48,19 @@ body {
 
 /* Box class with glassmorphism */
 .box {
-  --box-border--border: linear-gradient(135deg, rgba(36, 161, 130, 0.15), rgba(68, 195, 170, 0.15));
-  --box--shadow-color: rgba(36, 161, 130, 0.15);
+  --box-border--border: linear-gradient(135deg, rgba(127, 120, 210, 0.15), rgba(0, 245, 212, 0.15));
+  --box--shadow-color: rgba(127, 120, 210, 0.15);
 
   position: relative;
   font-weight: 700;
   width: 100%;
   max-width: 600px;
   margin: 40px auto;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1); /* Light glass effect */
   padding: 30px;
   border-radius: 20px;
   backdrop-filter: blur(10px); /* Glassmorphism effect */
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 15px 25px var(--box--shadow-color);
   transition: all 0.4s ease;
   overflow: hidden;
@@ -69,8 +69,8 @@ body {
 
 .box:hover {
   transform: scale(1.03);
-  box-shadow: 0 20px 40px rgba(36, 161, 130, 0.3); /* Sea green shadow */
-  background: linear-gradient(135deg, rgba(36, 161, 130, 0.2), rgba(68, 195, 170, 0.2));
+  box-shadow: 0 20px 40px rgba(127, 120, 210, 0.3); /* Hover shadow with purple */
+  background: linear-gradient(135deg, rgba(127, 120, 210, 0.2), rgba(0, 245, 212, 0.2));
 }
 
 /* Box content */
@@ -105,7 +105,7 @@ img {
 /* Button styles */
 .button {
   display: inline-block;
-  background: linear-gradient(135deg, #24a182, #44c3aa); /* Sea green gradient */
+  background: linear-gradient(135deg, #7F78D2, #00F5D4); /* Purple to neon blue */
   color: white;
   padding: 12px 40px;
   border-radius: 12px;
@@ -120,9 +120,9 @@ img {
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #44c3aa, #24a182); /* Invert the sea green gradient on hover */
+  background: linear-gradient(135deg, #00F5D4, #7F78D2); /* Invert gradient on hover */
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(36, 161, 130, 0.3);
+  box-shadow: 0 10px 20px rgba(127, 120, 210, 0.3);
 }
 
 .button:active {
