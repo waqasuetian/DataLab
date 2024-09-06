@@ -1,7 +1,7 @@
 let Details = [
   {
     id: 1,
-    Title: "CraneGPT",
+    Title: "Crane GPT",
     Description:
       "Introducing CraneGPT, our cutting-edge chatbot designed to revolutionize crane operations. Leveraging the power of Langchain technology and the intelligence of the LAMA-2 language model, CraneGPT becomes your crane expert on demand. It seamlessly interprets crane manuals, providing expert answers to ensure safe and efficient crane operations. Powered by VectorDB for embeddings, CraneGPT offers precision and reliability, enhancing your crane-related queries. Unlock the future of crane management with CraneGPT - your digital partner for superior crane expertise and productivity.",
     Keywords: "Langchain, Large Language Model (LAMA-2), VectorDB",
@@ -153,7 +153,7 @@ let Details = [
     Description:
       "The aim of this research-based project is to develop an integrated system for precise and context-aware yield forecasts in Faisalabad, using multi-source data that includes remote sensing, meteorological, and soil data, supporting sustainable agricultural practices and food security.",
     Keywords: "Remote Sensing, Meteorological Data, Soil Data",
-    Image: "Crop Yeild.mp4",
+    Image: "/Pictures/Amazon.jpeg",
     Challenges: [
       "Traditional methods for yield prediction rely on ground-truthing techniques.",
       "These techniques can be expensive and time-consuming.",
