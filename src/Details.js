@@ -1,7 +1,7 @@
 let Details = [
   {
     id: 1,
-    Title: "Crane   gGPT",
+    Title: "CraneGPT",
     Description:
       "Introducing CraneGPT, our cutting-edge chatbot designed to revolutionize crane operations. Leveraging the power of Langchain technology and the intelligence of the LAMA-2 language model, CraneGPT becomes your crane expert on demand. It seamlessly interprets crane manuals, providing expert answers to ensure safe and efficient crane operations. Powered by VectorDB for embeddings, CraneGPT offers precision and reliability, enhancing your crane-related queries. Unlock the future of crane management with CraneGPT - your digital partner for superior crane expertise and productivity.",
     Keywords: "Langchain, Large Language Model (LAMA-2), VectorDB",
