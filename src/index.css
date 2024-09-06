@@ -10,8 +10,8 @@
 }
 
 body {
-  background: linear-gradient(125deg, #2C3E40 0%, #1ABC3C 100%); /* Navy blue to teal gradient */
-  color: #ECD0F1; /* Light gray for text */
+  background: linear-gradient(125deg, #f5f7fa 0%, #c3e0e5 100%); /* Soft pastel gradient */
+  color: #333333; /* Dark gray for text */
   line-height: 1.75;
   padding: 20px;
   display: flex;
@@ -26,7 +26,7 @@ body {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #1ABC0C; /* Teal for headings */
+  color: #348AA7; /* Calming teal for headings */
   font-size: 3rem;
   padding: 15px;
   text-align: center;
@@ -48,8 +48,8 @@ body {
 
 /* Box class with glassmorphism */
 .box {
-  --box-border--border: linear-gradient(135deg, rgba(52, 152, 219, 0.15), rgba(26, 188, 156, 0.15)); /* Light blue to teal */
-  --box--shadow-color: rgba(52, 152, 219, 0.15); /* Light blue shadow */
+  --box-border--border: linear-gradient(135deg, rgba(84, 153, 199, 0.15), rgba(50, 188, 156, 0.15)); /* Soft blue to green */
+  --box--shadow-color: rgba(84, 153, 199, 0.15); /* Softer blue shadow */
 
   position: relative;
   font-weight: 700;
@@ -69,8 +69,8 @@ body {
 
 .box:hover {
   transform: scale(1.03);
-  box-shadow: 0 20px 40px rgba(52, 152, 219, 0.3); /* Hover shadow with light blue */
-  background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(26, 188, 156, 0.2));
+  box-shadow: 0 20px 40px rgba(84, 153, 199, 0.3); /* Hover shadow with soft blue */
+  background: linear-gradient(135deg, rgba(84, 153, 199, 0.2), rgba(50, 188, 156, 0.2));
 }
 
 /* Box content */
@@ -82,7 +82,7 @@ body {
 
 .box-content h2 {
   font-size: 2rem;
-  color: black;
+  color: #333333; /* Dark gray for content text */
   opacity: 0;
   animation: slideUp 1.5s ease-in-out forwards;
   animation-delay: 0.5s;
@@ -105,7 +105,7 @@ img {
 /* Button styles */
 .button {
   display: inline-block;
-  background: linear-gradient(135deg, #3498DB, #1ABC9C); /* Light blue to teal gradient */
+  background: linear-gradient(135deg, #56CCF2, #2F80ED); /* Soft blue gradient */
   color: white;
   padding: 12px 40px;
   border-radius: 12px;
@@ -120,9 +120,9 @@ img {
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #1ABC9C, #3498DB); /* Invert gradient on hover */
+  background: linear-gradient(135deg, #2F80ED, #56CCF2); /* Invert gradient on hover */
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 10px 20px rgba(84, 153, 199, 0.3); /* Soft blue shadow */
 }
 
 .button:active {
