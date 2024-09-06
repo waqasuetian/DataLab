@@ -10,8 +10,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #1F3B4D 0%, #4C5270 100%); /* Deep blue to indigo gradient */
-  color: #ECEFF1; /* Light off-white for text */
+  background: linear-gradient(135deg, #2C3E50 0%, #1ABC9C 100%); /* Navy blue to teal gradient */
+  color: #ECF0F1; /* Light gray for text */
   line-height: 1.75;
   padding: 20px;
   display: flex;
@@ -26,7 +26,7 @@ body {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #00F5D4; /* Neon blue for headings */
+  color: #1ABC9C; /* Teal for headings */
   font-size: 3rem;
   padding: 15px;
   text-align: center;
@@ -48,8 +48,8 @@ body {
 
 /* Box class with glassmorphism */
 .box {
-  --box-border--border: linear-gradient(135deg, rgba(127, 120, 210, 0.15), rgba(0, 245, 212, 0.15));
-  --box--shadow-color: rgba(127, 120, 210, 0.15);
+  --box-border--border: linear-gradient(135deg, rgba(52, 152, 219, 0.15), rgba(26, 188, 156, 0.15)); /* Light blue to teal */
+  --box--shadow-color: rgba(52, 152, 219, 0.15); /* Light blue shadow */
 
   position: relative;
   font-weight: 700;
@@ -69,8 +69,8 @@ body {
 
 .box:hover {
   transform: scale(1.03);
-  box-shadow: 0 20px 40px rgba(127, 120, 210, 0.3); /* Hover shadow with purple */
-  background: linear-gradient(135deg, rgba(127, 120, 210, 0.2), rgba(0, 245, 212, 0.2));
+  box-shadow: 0 20px 40px rgba(52, 152, 219, 0.3); /* Hover shadow with light blue */
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(26, 188, 156, 0.2));
 }
 
 /* Box content */
@@ -105,7 +105,7 @@ img {
 /* Button styles */
 .button {
   display: inline-block;
-  background: linear-gradient(135deg, #7F78D2, #00F5D4); /* Purple to neon blue */
+  background: linear-gradient(135deg, #3498DB, #1ABC9C); /* Light blue to teal gradient */
   color: white;
   padding: 12px 40px;
   border-radius: 12px;
@@ -120,9 +120,9 @@ img {
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #00F5D4, #7F78D2); /* Invert gradient on hover */
+  background: linear-gradient(135deg, #1ABC9C, #3498DB); /* Invert gradient on hover */
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(127, 120, 210, 0.3);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
 }
 
 .button:active {
