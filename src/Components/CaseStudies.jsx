@@ -21,7 +21,7 @@ const CaseStudies = () => {
         Witness the impact of our successful projects and how they have shaped industries.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
         {Details.map((EachDetail, Index) => (
           <div key={Index} className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
             <div className="mb-4">
@@ -47,7 +47,7 @@ const CaseStudies = () => {
               onClick={() => RouteChange(EachDetail?.Title)}
             >
               Let's Dive In
-              <TiLocationArrow className="w-5 h-5" />
+              <TiLocationArrow className="w-6 h-6" />
             </button>
           </div>
         ))}
