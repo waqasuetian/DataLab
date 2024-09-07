@@ -151,11 +151,20 @@ let Details = [
     Title:
       "Amazon Product Sentiment Analyzer",
     Description:
-      "The aim of this research-based project is to develop an integrated system for precise and context-aware yield forecasts in Faisalabad, using multi-source data that includes remote sensing, meteorological, and soil data, supporting sustainable agricultural practices and food security.",
-    Keywords: "Remote Sensing, Meteorological Data, Soil Data",
+      "The task is to perform sentiment analysis on a dataset of Amazon product reviews. The objective is to classify reviews as either positive or negative. The dataset is pre-labeled, and the solution involves preprocessing the reviews, training a model, and deploying\
+      it as a web application. The user can input a review sentence, and the model outputs the predicted sentiment.",
+    Keywords: "NLP, Trustworthiness, Linguistics",
     Image: "/Pictures/Amazon.jpeg",
     Challenges: [
-      "Traditional methods for yield prediction rely on ground-truthing techniques.",
+      "Here are the challenges in a more concise form:
+
+Data Preprocessing: Tokenizing, encoding, padding/truncating reviews.
+Outlier Handling: Removing short or irrelevant reviews.
+Vocabulary Encoding: Handling out-of-vocabulary words and padding.
+Model Architecture: Designing a BiLSTM for sentiment classification.
+Model Deployment: Integrating model inference into Streamlit for real-time sentiment analysis.
+Loading Pretrained Model: Ensuring correct loading of the model and vocabulary.
+Visual Feedback: Providing clear sentiment confidence scores and visualizations.",
       "These techniques can be expensive and time-consuming.",
     ],
     Tools: [
