@@ -1,5 +1,4 @@
 let Details = [
-  
   {
     id: 1,
     Title: "Crane GPT",
