@@ -3,21 +3,52 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center sticky top-0 z-[999] md:border-b-[2px] border-b-[1px] border-white md:p-2 backdrop-blur-md border-dashed bg-opacity-80 bg-[#1F3B4D]">
-      <div className="flex items-center space-x-4">
-        <img
-          src="/Favicon/Favicon.png"
-          alt="DataLabB Logo"
-          className="h-10 sm:h-12 md:h-16 lg:h-20"
-        />
-        <h3 className="text-center text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#00F5D4]">
-          <Link to={"/"} className="hover:text-[#7F78D2] transition-colors duration-300">
-            DataLabB Portfolio
+    <header className="sticky top-0 z-[999] bg-opacity-90 bg-[#1F3B4D] backdrop-blur-lg shadow-md border-b-[2px] border-[#00F5D4] transition-all duration-300">
+      <div className="container mx-auto flex justify-between items-center py-3 px-4 md:px-8">
+        {/* Logo Section */}
+        <div className="flex items-center space-x-3">
+          <img
+            src="/Favicon/Favicon.png"
+            alt="DataLabB Logo"
+            className="h-8 sm:h-10 md:h-12 lg:h-16"
+          />
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#00F5D4]">
+            <Link
+              to={"/"}
+              className="hover:text-[#7F78D2] transition-colors duration-300"
+            >
+              DataLabB Portfolio
+            </Link>
+          </h3>
+        </div>
+
+        {/* Navigation Links */}
+        <nav className="hidden md:flex space-x-8">
+          <Link
+            to="/projects"
+            className="text-base font-medium text-white hover:text-[#7F78D2] transition duration-300"
+          >
+            Projects
           </Link>
-        </h3>
+          <Link
+            to="/about"
+            className="text-base font-medium text-white hover:text-[#7F78D2] transition duration-300"
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="text-base font-medium text-white hover:text-[#7F78D2] transition duration-300"
+          >
+            Contact
+          </Link>
+        </nav>
+
+        {/* Mobile Menu (Optional, can add later) */}
       </div>
-    </div>
+    </header>
   );
 };
 
 export default Header;
+
