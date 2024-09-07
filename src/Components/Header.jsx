@@ -12,7 +12,7 @@ const Header = () => {
             alt="DataLabB Logo"
             className="h-8 sm:h-10 md:h-12 lg:h-16"
           />
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#00F5D4]">
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#11F5D4]">
             <Link
               to={"/"}
               className="hover:text-[#7F78D2] transition-colors duration-300"
