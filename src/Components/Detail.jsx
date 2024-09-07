@@ -29,7 +29,7 @@ const Detail = () => {
       <div className="container mx-auto py-12 px-4">
         <Link to="/">
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full fixed bottom-4 right-4 shadow-lg hover:bg-blue-600 transition duration-300">
-            <IoHome className="w-6 h-6 inline" /> Home Page
+            <IoHome className="w-4 h-4 inline" /> Home Page
           </button>
         </Link>
 
