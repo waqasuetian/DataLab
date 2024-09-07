@@ -156,8 +156,7 @@ let Details = [
     Keywords: "NLP, Trustworthiness, Linguistics",
     Image: "/Pictures/Amazon.jpeg",
     Challenges: [
-      Here are the challenges in a more concise form:
-
+Here are the challenges in a more concise form:
 "Data Preprocessing: Tokenizing, encoding, padding/truncating reviews.",
 "Outlier Handling: Removing short or irrelevant reviews.",
 "Vocabulary Encoding: Handling out-of-vocabulary words and padding.",
@@ -165,7 +164,7 @@ let Details = [
 "Model Deployment: Integrating model inference into Streamlit for real-time sentiment analysis.",
 "Loading Pretrained Model: Ensuring correct loading of the model and vocabulary.",
 "Visual Feedback: Providing clear sentiment confidence scores and visualizations.",
-      "These techniques can be expensive and time-consuming.",
+"These techniques can be expensive and time-consuming.",
     ],
     Tools: [
      "PyTorch for building and training a neural network (specifically a BiLSTM) for sentiment classification.",
