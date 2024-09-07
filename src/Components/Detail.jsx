@@ -33,7 +33,7 @@ const Detail = () => {
           </button>
         </Link>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
             {EachDetail?.Image?.endsWith(".mp4") ? (
               <video src={EachDetail.Image} className="w-full h-auto" controls />
@@ -51,7 +51,7 @@ const Detail = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
               <TbTriangleSquareCircleFilled className="w-8 h-8 text-blue-500 mr-2" /> Challenges
