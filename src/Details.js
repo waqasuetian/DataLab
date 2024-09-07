@@ -25,7 +25,7 @@ let Details = [
     Description:
       "Introducing CraneGPT, our cutting-edge chatbot designed to revolutionize crane operations. Leveraging the power of Langchain technology and the intelligence of the LAMA-2 language model, CraneGPT becomes your crane expert on demand. It seamlessly interprets crane manuals, providing expert answers to ensure safe and efficient crane operations. Powered by VectorDB for embeddings, CraneGPT offers precision and reliability, enhancing your crane-related queries. Unlock the future of crane management with CraneGPT - your digital partner for superior crane expertise and productivity.",
     Keywords: "Langchain, Large Language Model (LAMA-2), VectorDB",
-    Image: "/Pictures/CraneGPT.webp",
+    Image: "/Pictures/speakerVerification.webp",
     Challenges: [
       "Interpreting various crane manuals with different terminologies and structures",
       "Ensuring the accuracy and reliability of the answers provided.",
