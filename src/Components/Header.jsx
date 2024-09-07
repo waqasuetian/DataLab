@@ -21,31 +21,6 @@ const Header = () => {
             </Link>
           </h3>
         </div>
-
-        {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-8">
-          <Link
-            to="/projects"
-            className="text-base font-medium text-white hover:text-[#7F78D2] transition duration-300"
-          >
-            Projects
-          </Link>
-          <Link
-            to="/about"
-            className="text-base font-medium text-white hover:text-[#7F78D2] transition duration-300"
-          >
-            About
-          </Link>
-          <Link
-            to="/contact"
-            className="text-base font-medium text-white hover:text-[#7F78D2] transition duration-300"
-          >
-            Contact
-          </Link>
-        </nav>
-
-        {/* Mobile Menu (Optional, can add later) */}
-      </div>
     </header>
   );
 };
