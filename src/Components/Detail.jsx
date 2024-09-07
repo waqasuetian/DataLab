@@ -8,7 +8,8 @@ import { IoHome } from "react-icons/io5";
 
 const Detail = () => {
   const { caseid } = useParams();
-  let [EachDetail, setEachDetail] = useState({});
+  const [EachDetail, setEachDetail] = useState({});
+
   useEffect(() => {
     Details.map((item) => {
       if (item.Title === caseid) {
@@ -22,95 +23,90 @@ const Detail = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen relative">
-      <div className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
-      <div className="bg-[#dbd7fb] absolute top-[-1rem] left-[-35rem] -z-10 h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
+    <div className="flex flex-col min-h-screen relative bg-gray-50">
+      {/* Background Effects */}
+      <div className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] -z-10 h-[30rem] w-[30rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
+      <div className="bg-[#dbd7fb] absolute top-[1rem] left-[-25rem] -z-10 h-[30rem] w-[40rem] rounded-full blur-[8rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem]"></div>
+
       <Header />
-      <div className="h-auto text-black flex flex-col md:py-16 py-12 mx-auto md:space-y-24 space-y-12 w-[90vw] md:w-[70vw]">
+
+      {/* Case Study Details Section */}
+      <div className="container mx-auto text-black flex flex-col py-12 md:py-16 px-4 md:px-8 w-full">
+        {/* Back to Home Button */}
         <Link to={"/"}>
-          <button className="flex justify-between items-center w-max md:gap-x-6 gap-x-4 rounded-full p-2 px-4 bg-blue-500 text-white fixed bottom-2 right-2 text-xs md:text-base">
-            <IoHome className="h-4 w-4 md:h-6 md:w-6" />
+          <button className="flex items-center gap-x-2 md:gap-x-4 p-2 px-4 bg-blue-500 text-white rounded-full fixed bottom-4 right-4 text-xs md:text-base shadow-lg hover:bg-blue-600 transition duration-300">
+            <IoHome className="h-5 w-5 md:h-6 md:w-6" />
             Home Page
           </button>
         </Link>
 
-        <div className="flex justify-start">
-          <div className="flex items-center justify-between flex-col md:flex-row gap-y-12">
-            <div className="md:w-[50%] rotate-6 hover:rotate-0 transition-all ease-out p-2 rounded-md box h-auto relative">
-              {EachDetail && EachDetail?.Image?.endsWith(".mp4") ? (
-                <div className="w-full rounded-md object-contain">
-                  <video
-                    src={
-                      "https://firebasestorage.googleapis.com/v0/b/datalabb-db648.appspot.com/o/" +
-                      encodeURIComponent(EachDetail.Image) +
-                      "?alt=media&token=536a0c9e-8591-43a9-b798-d88a841e6ae6"
-                    }
-                    className="w-full rounded-md object-contain max-h-[40vh] bg-black"
-                    alt={EachDetail.Title}
-                    controls
-                    autoPlay
-                  />
-                </div>
-              ) : (
-                <div className="w-full rounded-md h-[40vh] object-contain">
-                  <img
-                    src={EachDetail?.Image}
-                    className="w-full rounded-md object-cover max-h-full h-auto bg-black"
-                    loading="lazy"
-                    alt={EachDetail?.Title}
-                    style={{ height: "100%" }}
-                  />
-                </div>
-              )}
-            </div>
+        {/* Detail Section */}
+        <div className="flex flex-col md:flex-row items-start gap-y-8 md:gap-x-12">
+          {/* Media (Image/Video) */}
+          <div className="md:w-1/2 w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+            {EachDetail?.Image?.endsWith(".mp4") ? (
+              <video
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/datalabb-db648.appspot.com/o/" +
+                  encodeURIComponent(EachDetail.Image) +
+                  "?alt=media&token=536a0c9e-8591-43a9-b798-d88a841e6ae6"
+                }
+                className="w-full h-auto rounded-md object-cover bg-black"
+                controls
+                autoPlay
+              />
+            ) : (
+              <img
+                src={EachDetail?.Image}
+                className="w-full h-auto object-cover bg-black rounded-md"
+                alt={EachDetail?.Title}
+              />
+            )}
+          </div>
 
-            <div
-              className="text-black md:w-[40%] w-full flex flex-col justify-evenly space-y-5 h-full"
-              style={{ height: "100%" }}
-            >
-              {" "}
-              <h1 className="mb-2 text-xl md:text-xl lg:text-2l xl:text-4xl font-bold tracking-tight text-gray-700">
-                {EachDetail?.Title}
-              </h1>
-              <p className="sm:text-base text-xs text-justify">
-                {EachDetail?.Description}
-              </p>
-              <p className="sm:text-base text-xs text-justify">
-                <span className="font-semibold ">Keywords: </span>
-                {EachDetail?.Keywords}
-              </p>
-            </div>
+          {/* Textual Content */}
+          <div className="md:w-1/2 w-full flex flex-col justify-between space-y-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800">
+              {EachDetail?.Title}
+            </h1>
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+              {EachDetail?.Description}
+            </p>
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+              <span className="font-semibold">Keywords: </span>
+              {EachDetail?.Keywords}
+            </p>
           </div>
         </div>
 
-        <section className="flex items-start justify-between flex-col md:flex-row space-y-12 md:space-y-0">
-          <div className="space-y-12">
-            <div className="flex items-center gap-x-5">
-              <TbTriangleSquareCircleFilled className="md:h-24 md:w-24 w-12 h-12 text-black" />
-              <h1 className="text-xl md:text-xl lg:text-2l xl:text-4xl text-black font-bold">
+        {/* Challenges and Tools Section */}
+        <section className="flex flex-col md:flex-row justify-between space-y-12 md:space-y-0 mt-16">
+          {/* Challenges */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-x-4">
+              <TbTriangleSquareCircleFilled className="md:h-12 md:w-12 w-8 h-8 text-blue-500" />
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">
                 Challenges
-              </h1>
+              </h2>
             </div>
-            <ul className="flex flex-col gap-y-6 md:ml-32 ml-6 self-end sm:text-base text-xs">
-              {EachDetail?.Challenges?.map((item, Ind) => (
-                <li className="text-black list-disc" key={Ind}>
-                  {item}
-                </li>
+            <ul className="flex flex-col space-y-4 pl-6 list-disc text-gray-600 text-sm md:text-base">
+              {EachDetail?.Challenges?.map((challenge, idx) => (
+                <li key={idx}>{challenge}</li>
               ))}
             </ul>
           </div>
-          <div className="space-y-12">
-            <div className="flex items-center gap-x-5">
-              <PiCompassToolBold className="md:h-24 md:w-24 w-12 h-12 text-black" />
-              <h1 className="text-xl md:text-xl lg:text-2l xl:text-4xl text-black font-bold">
+
+          {/* Tools Used */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-x-4">
+              <PiCompassToolBold className="md:h-12 md:w-12 w-8 h-8 text-blue-500" />
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">
                 Tools Used
-              </h1>
+              </h2>
             </div>
-            <ul className="flex flex-col gap-y-6 md:ml-32 ml-6 self-end sm:text-base text-xs">
-              {EachDetail?.Tools?.map((item, Ind) => (
-                <li className="text-black list-disc" key={Ind}>
-                  {item}
-                </li>
+            <ul className="flex flex-col space-y-4 pl-6 list-disc text-gray-600 text-sm md:text-base">
+              {EachDetail?.Tools?.map((tool, idx) => (
+                <li key={idx}>{tool}</li>
               ))}
             </ul>
           </div>
@@ -121,3 +117,4 @@ const Detail = () => {
 };
 
 export default Detail;
+
