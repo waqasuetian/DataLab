@@ -156,7 +156,7 @@ let Details = [
     Keywords: "NLP, Trustworthiness, Linguistics",
     Image: "/Pictures/Amazon.jpeg",
     Challenges: [
-      "Here are the challenges in a more concise form:",
+      Here are the challenges in a more concise form:
 
 "Data Preprocessing: Tokenizing, encoding, padding/truncating reviews.",
 "Outlier Handling: Removing short or irrelevant reviews.",
@@ -168,10 +168,11 @@ let Details = [
       "These techniques can be expensive and time-consuming.",
     ],
     Tools: [
-      "MERN Stack for developing the web application.",
-      "Python for model development",
-      "Jupyter Notebook for data analysis and visualization.",
-      "VSC for code development.",
+     "PyTorch for building and training a neural network (specifically a BiLSTM) for sentiment classification.",
+"Streamlit for building and deploying the web application to allow users to input a review and get a sentiment prediction.",
+"Matplotlib & NumPy for visualizing the sentiment analysis result with a custom bar graph showing the confidence level.",
+"Pickle used for loading the pre-built vocabulary for encoding the text inputs.",
+"Collections (Counter) for constructing the vocabulary based on the frequency of words in the dataset.",
     ],
   },
 ];
