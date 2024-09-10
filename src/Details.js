@@ -132,7 +132,7 @@ let Details = [
     Description:
       "The Clinical Decision Support System aids young doctors in diagnosing diseases based on symptoms, especially when common symptoms overlap with multiple conditions. Data sourced from 'Habif’s Clinical Dermatology' by James G. Dinulos is annotated, converted into a CSV format, and preprocessed for compatibility with NLP-based Large Language Models like ClinicalBERT, Bio ClinicalBERT, and PubMedBert. The fine-tuned model is integrated into a Flutter mobile app, allowing doctors to input symptoms and receive predictions for the top five possible diseases along with their probabilities.",
     Keywords: "NLP, ClinicalBERT, PubMedBert, BioClinicalBERT",
-    Image: "Clinical Decision Support System.mp4",
+    Image: "cdss.mp4",
     Challenges: [
       "Delicate process due to variations in terminology and context.",
       "Manual identification of relevant symptoms for each disease.",
@@ -153,7 +153,7 @@ let Details = [
     Description:
       "The aim of this research-based project is to develop an integrated system for precise and context-aware yield forecasts in Faisalabad, using multi-source data that includes remote sensing, meteorological, and soil data, supporting sustainable agricultural practices and food security.",
     Keywords: "Remote Sensing, Meteorological Data, Soil Data",
-    Image: "Crop Yeild.mp4",
+    Image: "Yeild.mp4",
     Challenges: [
       "Traditional methods for yield prediction rely on ground-truthing techniques.",
       "These techniques can be expensive and time-consuming.",
