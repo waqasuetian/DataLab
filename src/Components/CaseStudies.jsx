@@ -47,7 +47,7 @@ const CaseStudies = () => {
               onClick={() => RouteChange(EachDetail?.Title)}
             >
               Let's Dive In
-              <TiLocationArrow className="w-6 h-6" />
+              <TiLocationArrow className="w-4 h-4" />
             </button>
           </div>
         ))}
