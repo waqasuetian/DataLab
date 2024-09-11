@@ -10,7 +10,7 @@ const Hero = () => {
           Unveiling the Power of AI, Data Science & Machine Learning
         </p>
 
-        <p className="text-sm md:text-lg lg:text-xl mt-6 font-light leading-relaxed px-6 md:px-24 lg:py-8 animate-fadeIn">
+        <p className="text-black md:text-lg lg:text-xl mt-6 font-light leading-relaxed px-6 md:px-24 lg:py-8 animate-fadeIn">
           Dive into our vibrant case studies and witness the power of technology
           as it collaborates with our clients to achieve their boldest digital
           innovation dreams. Explore how our projects have revolutionized
