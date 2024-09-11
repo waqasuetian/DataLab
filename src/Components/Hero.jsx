@@ -6,9 +6,10 @@ const Hero = () => {
     <div className="min-h-screen flex flex-col items-center justify-center relative bg-[#DEF9C4] text-white overflow-hidden">
       {/* Hero Text Section */}
       <div className="max-w-4xl pb-4 md:pt-16 text-center">
-        <p className="text-2xl md:text-4xl lg:text-6xl font-bold leading-snug animate-fadeIn">
+        <p className="text-black text-2xl md:text-4xl lg:text-6xl font-bold leading-snug animate-fadeIn">
           Unveiling the Power of AI, Data Science & Machine Learning
         </p>
+
         <p className="text-sm md:text-lg lg:text-xl mt-6 font-light leading-relaxed px-6 md:px-24 lg:py-8 animate-fadeIn">
           Dive into our vibrant case studies and witness the power of technology
           as it collaborates with our clients to achieve their boldest digital
