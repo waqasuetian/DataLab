@@ -3,7 +3,7 @@ import { TypewriterEffectSmooth } from "../UI/TypeWriter";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative bg-[#DEF9C4] text-white overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center relative bg-[#FFFBE6] text-white overflow-hidden">
       {/* Hero Text Section */}
       <div className="max-w-4xl pb-4 md:pt-16 text-center">
         <p className="text-black text-2xl md:text-4xl lg:text-6xl font-bold leading-snug animate-fadeIn">
