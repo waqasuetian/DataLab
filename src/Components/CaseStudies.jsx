@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import { TiLocationArrow } from "react-icons/ti";
-import Details from "../Details";
+import Details from "../Details"; // Ensure that Details is an array of case studies
 import { useNavigate } from "react-router-dom";
 
 const CaseStudies = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate(); // Using const instead of let for navigate
 
+  // Function to handle route change
   const RouteChange = (id) => {
     navigate(`/case-studies/${id}/details`);
   };
 
+  // Scroll to top on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -50,14 +52,14 @@ const CaseStudies = () => {
 
             {/* Displaying Keywords */}
             <p className="text-sm text-gray-600 font-semibold mb-2">
-              Keywords: {EachDetail.Keywords}
+              Keywords: {EachDetail?.Keywords?.join(", ")}
             </p>
 
             {/* Displaying Challenges */}
             <div className="mb-4">
               <h3 className="font-semibold text-gray-800 mb-2">Challenges:</h3>
               <ul className="list-disc list-inside text-gray-700">
-                {EachDetail.Challenges.map((challenge, index) => (
+                {EachDetail?.Challenges?.map((challenge, index) => (
                   <li key={index}>{challenge}</li>
                 ))}
               </ul>
@@ -67,7 +69,7 @@ const CaseStudies = () => {
             <div className="mb-4">
               <h3 className="font-semibold text-gray-800 mb-2">Tools Used:</h3>
               <ul className="list-disc list-inside text-gray-700">
-                {EachDetail.Tools.map((tool, index) => (
+                {EachDetail?.Tools?.map((tool, index) => (
                   <li key={index}>{tool}</li>
                 ))}
               </ul>
@@ -89,6 +91,3 @@ const CaseStudies = () => {
 };
 
 export default CaseStudies;
-
-
-
