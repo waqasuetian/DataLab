@@ -87,7 +87,17 @@ body {
   animation: slideUp 1.5s ease-in-out forwards;
   animation-delay: 0.5s;
 }
-
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
 @keyframes slideUp {
   0% { transform: translateY(30px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
@@ -128,6 +138,8 @@ img {
 .button:active {
   transform: scale(0.98);
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
