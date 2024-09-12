@@ -95,9 +95,20 @@ body {
     transform: translateX(-100%);
   }
 }
+
 .animate-scroll {
   animation: scroll 10s linear infinite;
 }
+
+/* Hides the scrollbar on mobile screens */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 @keyframes slideUp {
   0% { transform: translateY(30px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
