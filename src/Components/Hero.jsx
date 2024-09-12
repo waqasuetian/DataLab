@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { TypewriterEffectSmooth } from "../UI/TypeWriter";
 
 const Hero = () => {
@@ -45,7 +45,7 @@ export function TypewriterEffectSmoothDemo() {
   ];
 
   return (
-    <div className="flex overflow-hidden w-full my-8">
+    <div className="flex overflow-x-scroll w-full my-8 no-scrollbar">
       <div className="flex animate-scroll space-x-6">
         {words.map((word, index) => (
           <MovingWord key={index} text={word.text} className={word.className} />
@@ -61,7 +61,7 @@ function MovingWord({ text, className }) {
 
   return (
     <div
-      className={`text-2xl font-semibold transition-transform duration-300 ${className} ${
+      className={`text-base md:text-2xl font-semibold transition-transform duration-300 ${className} ${
         isPaused ? "scale-125" : "scale-100"
       }`}
       onMouseEnter={() => setIsPaused(true)}
@@ -78,6 +78,7 @@ function MovingWord({ text, className }) {
 
 // Tailwind CSS animation for moving words
 // Add this to your Tailwind CSS config or global CSS file
+// You can adjust the timing for mobile screens if necessary
 
 // Example:
 // @keyframes scroll {
@@ -102,6 +103,3 @@ function Tag({ label, bgColor }) {
     </p>
   );
 }
-
-
-
