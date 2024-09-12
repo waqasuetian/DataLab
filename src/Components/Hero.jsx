@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { TypewriterEffectSmooth } from "../UI/TypeWriter";
 
 const Hero = () => {
@@ -45,59 +45,17 @@ export function TypewriterEffectSmoothDemo() {
   ];
 
   return (
-    <div className="flex overflow-x-scroll w-full my-8 no-scrollbar">
-      <div className="flex animate-scroll space-x-6">
-        {words.map((word, index) => (
-          <MovingWord key={index} text={word.text} className={word.className} />
-        ))}
-      </div>
+    <div className="hidden md:flex flex-col items-center justify-center my-8">
+      <TypewriterEffectSmooth words={words} />
     </div>
   );
 }
-
-// MovingWord component to handle word movement and hover effect
-function MovingWord({ text, className }) {
-  const [isPaused, setIsPaused] = useState(false);
-
-  return (
-    <div
-      className={`text-base md:text-2xl font-semibold transition-transform duration-300 ${className} ${
-        isPaused ? "scale-125" : "scale-100"
-      }`}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-      style={{
-        whiteSpace: "nowrap",
-        animationPlayState: isPaused ? "paused" : "running",
-      }}
-    >
-      {text}
-    </div>
-  );
-}
-
-// Tailwind CSS animation for moving words
-// Add this to your Tailwind CSS config or global CSS file
-// You can adjust the timing for mobile screens if necessary
-
-// Example:
-// @keyframes scroll {
-//   0% {
-//     transform: translateX(100%);
-//   }
-//   100% {
-//     transform: translateX(-100%);
-//   }
-// }
-// .animate-scroll {
-//   animation: scroll 10s linear infinite;
-// }
 
 // Tag Component for Reusability
 function Tag({ label, bgColor }) {
   return (
     <p
-      className={`p-2 ${bgColor} rounded-full text-xs md:text-sm font-semibold shadow-md hover:scale-105 transition-transform duration-200`}
+      className={p-2 ${bgColor} rounded-full text-xs md:text-sm font-semibold shadow-md hover:scale-105 transition-transform duration-200}
     >
       {label}
     </p>
