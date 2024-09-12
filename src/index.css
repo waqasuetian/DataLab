@@ -87,7 +87,7 @@ body {
   animation: slideUp 1.5s ease-in-out forwards;
   animation-delay: 0.5s;
 }
-@keyframes scroll {
+/*@keyframes scroll {
   0% {
     transform: translateX(100%);
   }
@@ -108,11 +108,11 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-
-/*@keyframes slideUp {
+*/
+@keyframes slideUp {
   0% { transform: translateY(30px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
-}*/
+}
 
 /* Image handling */
 img {
