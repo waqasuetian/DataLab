@@ -150,7 +150,7 @@ let Details = [
     Description:
       "This research project focuses on developing an integrated system for precise and context-aware wheat yield forecasts in Faisalabad using multi-source data, including remote sensing, meteorological, and soil data, to support sustainable agriculture and food security.",
     Keywords: ["Remote Sensing", "Meteorological Data", "Soil Data"],
-    Image: "/Pictures/yeild.mp4",
+    Image: "/Pictures/yield.mp4",
     Challenges: [
       "Traditional yield prediction methods are expensive and time-consuming.",
       "Integrating multiple data sources for accurate yield prediction.",
